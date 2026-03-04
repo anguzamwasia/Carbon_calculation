@@ -8,7 +8,7 @@ library(httr)
 library(shiny)
 
 # Dummy data for demonstration (Replace with actual data)
-setwd("E:/Mt Kenya Carbon Credits")
+setwd("E:/...")
 carbon_data <- read.csv("andersson-2022-nairobi-1-data.csv")
 
 colnames(carbon_data) <- c("Sample_Code", "Week_Day", "Start_Date", "Stop_Date", 
@@ -508,5 +508,6 @@ server <- function(input, output, session) {
 }
 
 # Run the application 
+
 
 shinyApp(ui = ui, server = server)
